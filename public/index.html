@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Project</title>
-    <link rel="stylesheet" href="output.css" />
+   <link rel="stylesheet" href="styles.css">
     <script src="../app.js"></script>
   </head>
   <body>
-    <h1 class="text-blue-700 flex justify-center p-5 font-bold">
+    <h1
+      class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-700"
+    >
       Weather Project
     </h1>
-    <div class="form-control border-red-700">
-      <form action="/" method="post">
+    <div class="form-control mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form action="/" class="space-y-6" method="post">
         <label for="cityInput">City Name</label>
-        <input
-          type="text"
-          name="cityName"
-          style="color: black"
-          id="cityInput"
-        />
-        <button type="submit" class="bg-red-500">Go</button>
+        <input type="text" name="cityName" id="cityInput" />
+        <br>
+        <button type="submit" class="rounded-lg border-red-900 ring-4 ring-purple-700">Go</button>
       </form>
     </div>
   </body>
