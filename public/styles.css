@@ -1,0 +1,16 @@
+.mw-100 {
+    padding: 25px 20px;
+    height: 100px;
+    /* border: 2px solid red; */
+}
+.p-5 {
+    font: 30px Times;
+    text-decoration: underline;
+    text-align: center;
+}
+.btn{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}

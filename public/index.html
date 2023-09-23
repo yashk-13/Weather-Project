@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Project</title>
-   <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
     <script src="../app.js"></script>
   </head>
   <body>
-    <h1
-      class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-700"
-    >
-      Weather Project
-    </h1>
-    <div class="form-control mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form action="/" class="space-y-6" method="post">
-        <label for="cityInput">City Name</label>
-        <input type="text" name="cityName" id="cityInput" />
-        <br>
-        <button type="submit" class="rounded-lg border-red-900 ring-4 ring-purple-700">Go</button>
-      </form>
+    <div class="container text-center mt-5">
+      <h1 class="d-flex justify-content-center align-items-lg-center p-2">
+        Weather Project
+      </h1>
+      <div class="d-flex justify-content-center align-items-lg-center">
+        <form action="/" class="p-5 input-group-text form-control-lg" method="post">
+          <span for="cityInput" id="addon-wrapping class="city align-items-center  input-group-text">City Name</span>
+          <input type="text" name="cityName" class=" form-control-lg" aria-describedby="addon-wrapping" id="cityInput" />
+
+          <button type="submit" class="w-25 btn btn-info">Go</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
